@@ -1,0 +1,17 @@
+  .navbar {
+      background-color: rgba(0, 0, 0, 0.70);
+  }
+  
+  .jumbotron.login_page {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 30px;
+  }
+  
+  #h1z {
+      color: aliceblue;
+  }
+  
+  .fas.fa-user-tools {
+      width: 24px !important;
+      height: 24px !important;
+  }

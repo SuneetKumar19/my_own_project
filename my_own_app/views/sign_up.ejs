@@ -1,0 +1,35 @@
+<%include partials/header%>
+<style>
+body {
+    background-image: url("https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+</style>
+
+    <div class="container">
+        <div style="margin-top:15%;margin-left:20%;margin-right:20%" class="jumbotron login_page"  >
+                <h1 style="text-align:center"  id="h1z"><i style="padding-right:10px;" class="fas fa-user-plus"></i>Sign Up</h1>
+                
+<form class="form" action="/signup" method="POST">
+
+    <div class="form-group">
+         <input class="form-control" type="text" name="username" placeholder="Username">
+    </div>
+    <div class="form-group">
+        <input class="form-control" type="text" name="email" placeholder="Email">
+   </div>
+
+   <div class="form-group">
+        <input class="form-control" type="password" name="password" placeholder="Password">
+   </div>
+
+    <button class="btn btn-success btn-lg">Submit</button>
+
+</form>
+    </div>
+    </div>
+
+<%include partials/footer%>

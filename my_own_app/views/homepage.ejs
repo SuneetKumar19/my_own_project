@@ -1,0 +1,38 @@
+<%include partials/header%>
+<style>
+body {
+    background-image: url("https://images.pexels.com/photos/34199/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    background-position: center;
+    /* Resize the background image to cover the entire container */
+}
+.jumbotron{
+    margin-top:20%;
+    margin-left:3%;
+    margin-right:3%;
+    background:rgba(0, 0, 0, 0.65);
+    position:relative;
+    top:100;
+}
+ 
+
+</style>
+
+  <div class="container homepage">
+    <div class="jumbotron">
+        <h1 style="color:white;position:relative;text-align:center;font-family: 'Pacifico', cursive;">Welcome to Klick<i style="padding-left:20px;" class="fas fa-camera-retro"></i></h1>
+        <%if(!currentUser){%>
+        <a href="/signup" class="btn btn-light btn-lg" style="margin-left:43%;margin-top:20px;align:center;">Sign Up</a>
+       <%}else{%>
+       <a href="/signout" class="btn btn-danger btn-lg" style="margin-left:43%;margin-top:20px;align:center;">Sign Out</a>
+       <%}%>
+
+        
+    </div>
+ 
+      
+  </div>
+<%include partials/footer%>

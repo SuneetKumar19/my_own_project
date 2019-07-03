@@ -1,0 +1,41 @@
+<html>
+    <head>
+         <title>Video_editing_app</title>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+          <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+          <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+<nav class="navbar navbar-expand-xl navbar-bg-primary">
+  <a class="navbar-brand" href="/"  style="color:white;font-family: 'Pacifico', cursive;font-size: 40px;"><i style="padding-right:10px;" class="fas fa-camera-retro"></i>Klick</a>
+
+
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link"  style="color:white;font-family: 'Pacifico', cursive;" href="/tools"><i style="padding-right:10px;"class="fas fa-tools"></i>Tools</a>
+    </li>
+  </ul>
+
+  <ul class="navbar-nav ml-auto">
+
+  <%if(!currentUser){%>
+    <li class="nav-item active">
+      <a class="nav-link"  style="color:white;font-family: 'Pacifico', cursive;" href="/signup"><i style="padding-right:10px;" class="fas fa-user-plus"></i>SignUp</a>
+    </li>
+     <li class="nav-item active">
+      <a class="nav-link" style="color:white;font-family: 'Pacifico', cursive;" href="/login">Sign In</a>
+    </li>
+ 
+ 
+    <%}else{%>
+      <li class="nav-item active">
+      <a class="nav-link" style="color:white;font-family: 'Pacifico', cursive;">Logged in as <%=currentUser.username%></a>
+     </li>
+     <li class="nav-item active">
+      <a class="nav-link" href="/signout" style="color:white;font-family: 'Pacifico', cursive;">Sign Out</a>
+    </li>
+    <%}%>
+  </ul>
+</nav>
