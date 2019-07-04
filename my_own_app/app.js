@@ -1,4 +1,5 @@
 var express = require("express");
+var app = express();
 var mongoose = require("mongoose");
 var passport = require("passport");
 var bodyParser = require("body-parser");
@@ -7,7 +8,7 @@ var passportLocalMongoose = require("passport-local-mongoose");
 mongoose.connect("mongodb://localhost/video_editor_app", { useNewUrlParser: true });
 var User = require("./models/user");
 // for login and signup ================ initializations=============
-var app = express();
+
 app.set("view engine", "ejs");
 
 app.use(require("express-session")({
